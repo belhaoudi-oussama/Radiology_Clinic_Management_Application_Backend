@@ -8,7 +8,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "technicien")
-@PrimaryKeyJoinColumn(name = "techniciene_id")
 public class Technicien extends Utilisateur{
 
     @OneToMany(mappedBy = "technicien")
