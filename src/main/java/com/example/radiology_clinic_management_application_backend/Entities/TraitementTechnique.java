@@ -18,7 +18,7 @@ public class TraitementTechnique extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "rapport_technique")
     private RapportTechnique rapportTechnique;
-    @OneToMany(mappedBy = "traitement_technique")
+    @OneToMany(mappedBy = "traitementTechnique")
     private List<ImageRadiographique> imagesRadiographique;
 
     public String getDescriptionTechnique() {

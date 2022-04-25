@@ -11,7 +11,7 @@ import java.util.List;
 @PrimaryKeyJoinColumn(name = "responsable_id")
 public class Responsable extends Utilisateur{
 
-    @OneToMany(mappedBy = "responsable")
+    @OneToMany(mappedBy = "createur")
     private List<Utilisateur> utilisateur;
 
     public List<Utilisateur> getUtilisateur() {

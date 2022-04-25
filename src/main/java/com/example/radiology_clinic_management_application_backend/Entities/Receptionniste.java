@@ -11,7 +11,7 @@ import java.util.List;
 @PrimaryKeyJoinColumn(name = "receptionniste_id")
 public class Receptionniste extends Utilisateur{
 
-    @OneToMany(mappedBy = "receptionniste")
+    @OneToMany(mappedBy = "createur")
     private List<Patient> ptients;
 
     @OneToMany(mappedBy = "receptionniste")

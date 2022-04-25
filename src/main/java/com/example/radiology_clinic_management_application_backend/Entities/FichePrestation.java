@@ -15,7 +15,7 @@ public class FichePrestation extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "patient_id")
     private Patient patient;
-    @OneToOne(mappedBy = "fich_Prestation")
+    @OneToOne(mappedBy = "fichePrestation")
     private RapportTechnique rapportTech;
 
     public OrdonnanceSource getSource() {

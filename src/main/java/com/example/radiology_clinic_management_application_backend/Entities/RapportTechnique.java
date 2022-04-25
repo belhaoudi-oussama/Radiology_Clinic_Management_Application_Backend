@@ -11,12 +11,12 @@ public class RapportTechnique extends BaseEntity{
     private String titre;
     @Column(name = "date_de_creation")
     private LocalDateTime dateCreation;
-    @OneToMany(mappedBy = "rapport_technique")
+    @OneToMany(mappedBy = "rapportTechnique")
     private List<TraitementTechnique> traitementsTechniques;
     @OneToOne
     @JoinColumn(name = "fiche_prestation_id")
     private FichePrestation fichePrestation;
-    @OneToOne(mappedBy = "rapport_technique")
+    @OneToOne(mappedBy = "rapportTechnique")
     private Rapport rapport;
 
     public List<TraitementTechnique> getTraitementsTechniques() {

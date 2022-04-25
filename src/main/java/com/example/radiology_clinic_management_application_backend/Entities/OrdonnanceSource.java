@@ -87,7 +87,7 @@ public class OrdonnanceSource extends BaseEntity{
         this.fiche = fiche;
     }
 
-    @OneToMany(mappedBy = "ordonnance_source")
+    @OneToMany(mappedBy = "source")
     private List<FichePrestation> fiche;
 
 
